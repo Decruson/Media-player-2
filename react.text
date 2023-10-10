@@ -1,0 +1,113 @@
+
+
+             REACT(FRONT END Techonoly)
+          -----------------------------------        
+
+        Basic commands 
+      -------------------
+   1. To create react app: npx create-react-app project-name
+   2. To run react app : npm start
+   3. To install axios : npm i axios
+
+
+       FEATURES & Concepts   
+     ------------------------- 
+ 1. Used to build UI help of Javascript Libraries
+ 2. Used to build Single page applications
+ 3. Declarative Approach : 
+ 4. Immutable & Mutable variables
+ 5. Pure Functions : It should not cause a side effect
+ 6. Virtual DOM
+ 7. Unidairectional Data flow : parent to child
+ 8. JSX : (Javascript XML)  (HTML, CSS, JS)
+          - Every jsx expressions should placed inside a single target
+          - React fragments : <> </>
+          - Instead of Attribute class use className
+          - Instead of Attribute for use htmlFor
+          - To display js expressions in jsx place js expression instead a {}
+          - Every tag should has its closing tag,
+          - Self closing tag
+ 9. Transpiling : converting jsx to (HTML, CSS, JS) - babel
+10. TO CREATE react app : create-react-app command 
+11. React App is consist of one or more components : A tree structure of components with starting coponent - App Component
+12. Component : Is a small part of UI, return HTML 
+          - Is js/jsx file, with filename always start with a capital letter
+          - Different components in react 
+                - Functional Components 
+                - Class based components
+13. Props : Used to share data from parent to child
+                - its ia an object 
+                - child component can access share data via props from its argument
+14. Styling component using CSS
+                - Inline CSS
+                - External CSS Sheet     
+                - CSS Module : a file with extension as .module.css             
+15. React Events Handling 
+                - Without argument : event bind using its function name only
+                - With argument : event bind using arrow function
+                - With event object : event bind using arrow function with event object
+16. Conditional Rendering 
+                - if statements : && operator
+                - if-else statements : Ternary ?: operator
+17. React State: 
+                - predefined object to store property of a class based component
+                - when state changes then component re-Render
+                - to change value of state - use setState(value)
+18. React Component Lifecycle
+             - Mounting phase : Putting all elements into DOM
+                - constructor()
+                - getDerivedStateFromProps()
+                - render()
+                - componentDidMount()
+            - Updating phase : while updating component
+                - getDerivedStateFromProps()
+                - shouldComponentUpdate()
+                - render()
+                - getSnapshotBeforeUpdate()
+                - componentDidUpdate()
+            - Unmounting phase : Removing component from DOM
+                - componentWillUnmount()
+19. React Hooks : provide react Features like state and Life cycle etc to Functional component
+            - Import hook from react to Functional component by calling hook
+            - Hook can only called at top level of component
+            - Hook cannot be Conditional
+            - Types of Hooks
+                - Predefined Hook
+                    - useState(initial-value) : return state and function to updating state
+                    - useEffect (<function>, <dependency>): Hook allows you to perform side effects in your components.
+                           - UseEffect runs on every render
+                           - Based on dependency we can cantrol side effects 
+                                   - No dependency passed : Runs on every render
+                                   - An empty array : Runs only on the first render
+                                   - Props or state values : Runs on the first render,
+                                     And any time any dependency value changes
+                - Custom Hook 
+20. Rendering List (Array of List) : use map method 
+21. React Forms : handled by component
+                - preventDefault() : method cancels the event if it is cancelable
+                - Types component 
+                    - Controlled component : managed by react component
+                    - Uncontrolled component : managed by DOM
+22. API Call : React
+                - Use of Axios Library : Promise based HTTP client for the browser and node.js 
+                - Creating an instance : Using create method in axios
+23. Routing / set up path for component in React
+                - Use react-router-dom Library 
+                      - entire app should inside BrowserRouter
+                      - 
+
+     --------------------------React Applications----------------------------- 
+
+                       1. Simple Interest Calculator App
+                                 - React component
+                                 - React Hook : useState
+                                 - React Form
+                                 - Conditional Rendering
+                                 - React Events
+                                 - User input Validation
+                       2. Netflix Clone
+                                - React Component
+                                - React Hook : useState , useEffect
+                                - Api call using axios 
+                      3.  Media Player App      
+
